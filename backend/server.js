@@ -16,6 +16,9 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = 3000;
+app.use(cors({
+  origin: "https://follow-up-email-agent.vercel.app/"
+}));
 
 app.get("/", (req, res) => {
     res.send("Follow-up API is running");
