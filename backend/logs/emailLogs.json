@@ -1,0 +1,1214 @@
+[
+  {
+    "invoiceNumber": "INV-101",
+    "clientName": "Rajesh",
+    "communicationHistory": [
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Reminder: Payment overdue for Invoice INV-101",
+        "body": "Dear Rajesh,\n\nI hope you are well. This is a courteous reminder that payment for Invoice INV-101, amounting to ₹5,000, was due on 2026-05-01 and is now 11 days overdue. Kindly arrange for the settlement at your earliest convenience to avoid any disruption to our services.\n\nIf you have already processed the payment, please disregard this notice. Otherwise, please let us know if there are any issues or if you need assistance.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-12T17:31:04.204Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Reminder: Invoice INV-101 Overdue – Payment Request",
+        "body": "Dear Rajesh,\n\nI hope this message finds you well. This is a polite reminder that Invoice INV-101 for ₹5000 was due on 2026-05-01 and is now 11 days overdue. We kindly request that you process the payment at your earliest convenience to avoid any further delays.\n\nIf you have any questions or need assistance, please feel free to contact us.\n\nThank you for your prompt attention to this matter.\n\nSincerely,\n[Your Name]",
+        "timestamp": "2026-05-12T17:32:03.592Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Reminder: Invoice INV-101 is overdue by 11 days",
+        "body": "Dear Rajesh,\n\nWe hope you are well. This is a polite reminder that Invoice INV-101 for ₹5,000 was due on 2026-05-01 and is now 11 days overdue. Kindly arrange payment at your earliest convenience to avoid any interruption to services.\n\nIf you have already sent the payment, please disregard this notice. Otherwise, please let us know if you need any assistance.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nFinance Team",
+        "timestamp": "2026-05-12T18:59:19.250Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Reminder: Invoice INV-101 Overdue by 11 Days",
+        "body": "Dear Rajesh,\n\nI hope you are well. This is a courteous reminder that invoice INV-101 for ₹5,000 was due on May 1, 2026 and is now 11 days overdue. We kindly request that you arrange payment at your earliest convenience to avoid any interruption to services.\n\nIf you have already made the payment, please disregard this notice and accept our thanks. Should you have any questions or require assistance, feel free to contact us.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\n[Your Company Name] Finance Team",
+        "timestamp": "2026-05-12T19:07:04.989Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Payment Reminder: Invoice INV-101",
+        "body": "Dear Rajesh,\n\nWe hope you are well. This is a friendly reminder that Invoice INV-101, amounting to ₹5000, was due on 2026-05-01. As of today, the payment is 11 days overdue. We kindly request that you settle the outstanding balance at your earliest convenience to avoid any additional late fees.\n\nIf you have already processed this payment, please disregard this notice. Otherwise, please let us know the expected payment date.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nFinance Team",
+        "timestamp": "2026-05-12T19:07:43.085Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Payment Reminder for Invoice INV-101 – Urgent Action Required",
+        "body": "Dear Rajesh,\n\nI hope you are doing well. This is a friendly reminder that Invoice INV-101 (₹5,000) was due on 2026-05-01 and is now 11 days past due. We kindly request that you arrange payment at your earliest convenience to avoid any further delays.\n\nPlease find the payment details attached. If you have already settled this invoice, please disregard this notice and accept our thanks.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-12T19:16:01.756Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Follow-up: Invoice INV-101 Overdue – Payment Request",
+        "body": "Dear Rajesh,\n\nI hope this message finds you well. This is a polite reminder that Invoice INV-101 for ₹5,000, which was due on 2026-05-01, is now 11 days overdue. We kindly request that you process the payment at your earliest convenience to avoid any further delays.\n\nPlease let us know if you need any assistance or have any queries regarding the invoice. If payment has already been made, please ignore this reminder.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\n[Your Name]\n[Your Position]\n[Your Company]",
+        "timestamp": "2026-05-12T19:43:57.171Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Follow-up: Payment Due for Invoice INV-101",
+        "body": "Dear Rajesh,\n\nI hope this message finds you well. This is a friendly reminder that Invoice INV-101 for ₹5000 was due on 2026-05-01. As of today, the invoice is 11 days overdue.\n\nWe kindly request that you process the payment at your earliest convenience to avoid any further delays. If you have already made the payment, please ignore this message and provide us with the payment details.\n\nThank you for your prompt attention to this matter. Please feel free to contact me if you have any questions.\n\nBest regards,\n[Your Name]\n[Your Position]\n[Your Company]",
+        "timestamp": "2026-05-12T19:45:24.790Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Reminder: Payment Due for Invoice INV-101",
+        "body": "Dear Rajesh,\n\nThis is a friendly reminder that invoice INV-101 for ₹5000 is now 12 days overdue. The original due date was May 1, 2026, and we have yet to receive your payment.\n\nWe kindly request that you arrange for the outstanding amount to be settled at the earliest convenience. If you have already made the payment, please disregard this email and share the transaction details for our records.\n\nShould you need any clarification or wish to discuss a revised payment plan, please do not hesitate to reach out.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nAccounts Team",
+        "timestamp": "2026-05-13T06:10:07.145Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Follow-up: Overdue Invoice INV-101",
+        "body": "Dear Rajesh,\n\nI hope this message finds you well. This is a polite reminder that Invoice INV-101 for ₹5000 was due on 2026-05-01 and is now 12 days overdue. We kindly request that you process the payment at your earliest convenience to avoid any further delays. Please let us know if you need any additional information or assistance. Thank you for your prompt attention to this matter.\n\nBest regards,\n[Your Name]",
+        "timestamp": "2026-05-13T06:11:31.669Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Follow-up: Invoice INV-101 Overdue – Payment Request",
+        "body": "Dear Rajesh,\n\nI hope this message finds you well. This is a polite follow-up regarding Invoice INV-101 for ₹5000, which was due on 2026-05-01. As of today, the invoice is 12 days overdue.\n\nWe kindly request you to process the payment at your earliest convenience to avoid any further delays. Please let us know if you need any additional information or if there are any issues we can assist with.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T06:13:23.004Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Follow-up on Invoice INV-101",
+        "body": "Dear Rajesh, \n\nThis is a polite yet firm reminder regarding invoice INV-101, amount due ₹5000, due date 2026-05-01. The invoice is currently 12 days overdue and has advanced to Stage 2. Please settle the outstanding amount at your earliest convenience to avoid further complications. \n\nBest regards,",
+        "timestamp": "2026-05-13T06:14:42.001Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Payment Reminder – INV-101",
+        "body": "Dear Rajesh,\\n\\nWe note that Invoice INV-101 for ₹5000, due on 2026-05-01, is now 12 days overdue. Please arrange payment at your earliest convenience.\\n\\nWe appreciate your prompt attention to this matter.\\n\\nBest regards,\\n[Your Company]",
+        "timestamp": "2026-05-13T06:21:05.707Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Payment Reminder for Invoice INV-101",
+        "body": "Dear Rajesh,\n\nThis is a friendly reminder that Invoice INV-101 for ₹5,000 is now 12 days overdue, with a due date of May 1, 2026. We kindly request that you arrange for the payment at your earliest convenience to avoid any further action.\n\nPlease let us know if you have already made the payment or if there are any issues we can help resolve. We appreciate your prompt attention to this matter.\n\nBest regards,\nAccounts Team",
+        "timestamp": "2026-05-13T06:21:33.682Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Parsing Error",
+        "body": "```json\n{\n  \"subject\": \"Reminder: Payment Due for Invoice INV-101\",\n  \"body\": \"Dear Rajesh Kumar,\\n\\nWe hope this message finds you well. Just a gentle reminder that the payment for Invoice INV-101 amounting to ₹45,000 is now overdue by 5 days. The due date was on May 8, 2026. Kindly look forward to settling the balance at your earliest convenience. \\n\\nIf this is an oversight or if there are any questions regarding the invoice, please do not hesitate to reach out to us. We’re here to help and ensure that our records are updated accurately. \\n\\nWe value your prompt attention to this matter and appreciate your continued partnership. For your reference, please find the invoice details below:\\n\\nInvoice Number: INV-101\\nAmount Due: ₹45,000\\nDue Date: 2026-05-08\\n\\nLooking forward to hearing from you soon.\\n\\nBest regards,\\n[Your Company Name] Finance Team\",\n  \"tone\": \"Warm & Friendly\",\n  \"stage\": \"Stage 1\"\n}\n```\n",
+        "timestamp": "2026-05-13T06:46:42.951Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-101 Due",
+        "body": "Hi Rajesh,\n\nI hope you're doing well! Just a gentle reminder about invoice INV-101 for ₹45000, which was due on 2026-05-08. Since it's now 5 days overdue, I wanted to check if there's anything I can assist with to help process the payment smoothly.\n\nPlease let me know your preferred next steps. Looking forward to hearing from you!\n\nWarm regards,\n[Your Name]",
+        "timestamp": "2026-05-13T09:15:15.293Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-101 is 5 days overdue",
+        "body": "Hi Rajesh,\n\nI hope you’re doing well! I’m writing to gently remind you that Invoice INV-101 for ₹45,000 was due on May 8, 2026, and is now 5 days overdue. Could you please let us know when we might expect the payment?\n\nIf there’s anything you need or any questions you have, feel free to reach out – we’re happy to help.\n\nThank you for your attention, and have a great day!\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T11:14:33.163Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-101 is Overdue",
+        "body": "Dear Rajesh Kumar,\n\nI hope you’re doing well! This is a friendly reminder that invoice INV-101 for ₹45,000 was due on May 8, 2026 and is now 5 days overdue. We understand that things can get busy, so please let us know if you need any assistance or an extension.\n\nKindly arrange payment at your earliest convenience. If you’ve already sent the payment, please disregard this note and accept our thanks.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T11:35:18.979Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-101 Payment Due",
+        "body": "Dear Rajesh Kumar,\n\nI hope this email finds you well.\n\nI wanted to gently reach out regarding Invoice INV-101 for ₹45,000, which was due on May 8, 2026. As of today, the invoice is 5 days overdue.\n\nI understand that sometimes things can get busy, and payments may slip through the cracks. If you have already processed the payment, please feel free to ignore this reminder.\n\nOtherwise, could you please kindly check on the status of this payment? If you have any questions or need any clarification regarding the invoice, please don't hesitate to reach out.\n\nThank you so much for your attention to this matter. I truly appreciate your continued partnership and look forward to hearing from you soon.\n\nWarm regards,\nFinance Team",
+        "timestamp": "2026-05-13T11:38:44.986Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly reminder: Invoice INV-101 is overdue",
+        "body": "Dear Rajesh Kumar,\n\nI hope you are doing well! I’m writing to kindly remind you that invoice INV-101 for ₹45,000 was due on May 8, 2026 and is now 5 days overdue. We understand that oversights happen, and we’d appreciate it if you could arrange payment at your earliest convenience.\n\nIf you have already sent the payment, please disregard this note, and thank you for your prompt attention. Should you have any questions or need assistance, feel free to reach out.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T11:48:47.668Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-101 – ₹45,000 Pending",
+        "body": "Dear Rajesh,\n\nI hope you’re doing well! I wanted to touch base regarding Invoice INV-101, which was due on May 8, 2026. Our records show that a balance of ₹45,000 is now 5 days overdue.\n\nIf you’ve already taken care of this, thank you so much—please disregard this note. Otherwise, could you let us know when we might expect payment? We’re happy to assist with any questions or arrange a convenient payment method.\n\nThank you for your attention, and we look forward to continuing our partnership.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T11:52:23.494Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-101 is Overdue",
+        "body": "Dear Rajesh,\n\nI hope you’re doing well! I’m writing to kindly remind you that invoice INV-101 for ₹45,000, which was due on May 8, 2026, is now 5 days overdue. We understand that oversights happen, and would appreciate it if you could arrange payment at your earliest convenience.\n\nIf you’ve already sent the payment, please disregard this note. Otherwise, feel free to let us know if there’s anything we can do to assist.\n\nThank you for your attention to this matter, and we look forward to continuing our partnership.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T12:32:58.797Z",
+        "status": "AGENT-GENERATED"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-101",
+        "body": "Dear Rajesh Kumar,\n\nI hope this message finds you well!\n\nI wanted to gently remind you that Invoice INV-101 for ₹45,000 was due on May 8, 2026, and is currently 5 days overdue.\n\nI understand things can get busy, and this is just a friendly nudge. Could you please review and process the payment at your earliest convenience? If there are any questions or if you need any clarification, please feel free to reach out to me directly.\n\nThank you so much for your prompt attention to this matter. I truly appreciate your business and look forward to continuing our great working relationship.\n\nWarm regards",
+        "timestamp": "2026-05-13T15:11:14.621Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-102",
+    "clientName": "Amit",
+    "communicationHistory": [
+      {
+        "stage": 4,
+        "tone": "Stern & Urgent",
+        "subject": "Payment Overdue Notice: Invoice INV-102",
+        "body": "Dear Amit,\n\nOur records indicate that Invoice INV-102 for ₹12,000, which was due on 2026-04-20, is now 22 days overdue. Immediate payment is required to avoid further action.\n\nPlease remit the outstanding amount by the close of business today. If you have already paid, provide proof of payment immediately.\n\nFailure to address this matter promptly will result in additional fees and possible suspension of services.\n\nRegards,\nFinance Department",
+        "timestamp": "2026-05-12T17:31:31.883Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": 4,
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Payment Required: Invoice INV-102 (₹12000)",
+        "body": "Dear Amit,\n\nOur records indicate that Invoice INV-102, amounting to ₹12,000, was due on 2026-04-20 and has now been overdue for 22 days. This delay is unacceptable and violates our agreed payment terms.\n\nPlease remit the full amount without further delay. Failure to comply within the next 48 hours will compel us to take decisive action, including but not limited to initiating collections procedures and reporting to credit bureaus.\n\nWe expect you to treat this matter with the urgency it demands.\n\nRegards,\nFinance Department",
+        "timestamp": "2026-05-12T17:32:21.274Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Payment Required: Invoice INV-102 Overdue by 22 Days",
+        "body": "Dear Amit,\n\nDespite previous reminders, your payment of ₹12,000 for Invoice INV-102, due on 2026-04-20, remains outstanding. You are now 22 days behind, which is unacceptable.\n\nPlease remit the full amount without further delay. Non‑payment will leave us no choice but to initiate collection procedures.\n\nWe expect your prompt action.\n\nRegards,\nFinance Department",
+        "timestamp": "2026-05-12T19:07:57.980Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent: Payment Overdue for Invoice INV-102",
+        "body": "Dear Amit,\n\nThis is a stern reminder that Invoice INV-102 for ₹12000 was due on 2026-04-20. As of today, the invoice is 22 days overdue. Immediate payment is required to avoid further action. Please remit the outstanding amount at your earliest convenience or contact us immediately to discuss resolution.\n\nFailure to address this matter promptly may result in additional fees or suspension of services.\n\nThank you for your immediate attention to this matter.\n\nSincerely,\n[Your Name]\nFinance Department",
+        "timestamp": "2026-05-12T19:08:34.625Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent: Immediate Payment Required for Overdue Invoice INV-102",
+        "body": "Dear Amit,\n\nThis is a stern and urgent reminder that Invoice INV-102 for ₹12000 was due on 2026-04-20. As of today, the invoice is 22 days overdue. Immediate payment is required to avoid further collection actions. Please remit the full amount promptly or contact us immediately to discuss resolution.\n\nFailure to settle this outstanding amount will result in additional penalties and may impact future credit. We urge you to act now.\n\nSincerely,\n[Your Company Name]",
+        "timestamp": "2026-05-12T19:17:22.631Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Payment Required: Invoice INV-102 Overdue by 22 Days",
+        "body": "Dear Amit,\n\nThis is a final reminder that Invoice INV-102 for ₹12,000 was due on 2026-04-20 and is now 22 days overdue. Your account remains in Stage 4, which signifies a critical status. Please remit the full amount immediately to avoid further escalation, including potential legal action and account closure.\n\nWe expect payment within 48 hours of receiving this email.\n\nRegards,\nAccounts Department",
+        "timestamp": "2026-05-12T19:45:36.253Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Action Required: Overdue Invoice INV-102",
+        "body": "Dear Amit,\n\nThis is a stern reminder that Invoice INV-102, amounting to ₹12000, was due on 2026-04-20 and is now 23 days overdue. We have not received any payment or communication regarding this outstanding balance.\n\nPlease process the payment immediately to avoid further action. If you have already sent the payment, provide the transaction details within 24 hours.\n\nFailure to comply will force us to pursue legal proceedings and may affect your future credit facilities.\n\nRegards,\nFinance Department",
+        "timestamp": "2026-05-13T06:10:23.174Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Attention Required: Overdue Invoice INV-102",
+        "body": "Dear Amit, your invoice INV-102 for ₹12000 remains outstanding with a due date of 2026-04-20. With 23 days overdue, significant interest will accrue. We must address this matter urgently to avoid further consequences. Please settle the amount at your earliest convenience.",
+        "timestamp": "2026-05-13T06:11:33.533Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent: Overdue Invoice INV-102 - Immediate Payment Required",
+        "body": "Dear Amit,\n\nThis is an urgent notice regarding your outstanding invoice INV-102 for ₹12000, which became overdue on 2026-04-20.\n\nAs of today, this invoice is 23 days past due. We have not yet received payment despite previous reminders.\n\nThis is Stage 4 of our collections process. Failure to settle this amount immediately will result in:\n- Additional late fees of 2% per week\n- Suspension of any ongoing services\n- Escalation to our legal department for recovery proceedings\n\nPlease remit payment of ₹12000 within 24 hours to avoid further action. You can transfer to our account details or contact our billing department immediately.\n\nTime is critical. We look forward to your prompt response.\n\nRegards,\nBilling Department",
+        "timestamp": "2026-05-13T06:13:26.518Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Final Notice: Overdue Invoice INV-102 - Immediate Payment Required",
+        "body": "Dear Amit,\n\nThis is a stern and urgent follow-up regarding your overdue invoice INV-102. The amount of ₹12000 was due on 2026-04-20 and remains unpaid for 23 days. This constitutes Stage 4 of our collection process, and immediate action is required.\n\nFailure to settle the outstanding amount within 24 hours will result in escalatory measures, including legal proceedings and potential credit reporting. You are advised to treat this as a final notice.\n\nKindly remit payment to the provided account details immediately. For urgent inquiries, contact our accounts team at accounts@company.com.\n\nThis is a serious matter requiring your immediate attention.\n\nRegards,\n[Your Name]\nAccounts Receivable Department",
+        "timestamp": "2026-05-13T06:14:50.835Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "URGENT: Overdue Invoice INV-102 - Immediate Payment Required",
+        "body": "Dear Amit,\n\nThis is an urgent reminder regarding your invoice INV-102 for ₹12000, which became overdue on 2026-04-20. You are currently 23 days past the due date.\n\nAs of today, the full payment of ₹12000 remains outstanding. This is Stage 4 of our collection process, and we require immediate payment to avoid further action.\n\nPlease note that continued non-payment may result in additional fees, suspension of services, or legal proceedings.\n\nWe strongly recommend processing the payment at your earliest convenience. If you have already sent payment, please disregard this notice and provide confirmation.\n\nContact us immediately if you have any questions or payment concerns.\n\nTime is critical - respond within 24 hours.",
+        "timestamp": "2026-05-13T06:21:10.112Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent: Overdue Invoice INV-102 – Immediate Payment Required",
+        "body": "Dear Amit,\n\nThis is a final reminder regarding your overdue invoice INV-102. The amount due of ₹12,000 was due on 2026-04-20 and is now 23 days past due. Despite previous notices, payment has not been received.\n\nPlease settle the outstanding balance immediately to avoid further action, including potential escalation to collections or legal proceedings. If you have already sent the payment, kindly disregard this notice and accept our appreciation.\n\nWe expect receipt of the full amount by end of business today. Failure to respond may result in suspension of services and additional penalties.\n\nRegards,\nFinance Department",
+        "timestamp": "2026-05-13T06:21:38.127Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:46:42.959Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T09:15:15.301Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:14:33.176Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:35:18.990Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:38:45.001Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:48:47.689Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-102 is 49 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:52:23.510Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-103",
+    "clientName": "Priya",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-103 is 5 days overdue",
+        "body": "Hi Priya,\n\nI hope you're doing well! I wanted to give you a quick heads‑up that invoice INV-103 for ₹8000, which was due on May 7, 2026, is now 5 days overdue. If you’ve already taken care of it, thank you so much—please disregard this note. Otherwise, could you let me know when we might expect payment? If there’s anything I can help with or if you need a copy of the invoice, just let me know.\n\nThanks a lot, and have a wonderful day!\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-12T17:31:57.473Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103 Pending Payment",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I’m reaching out to gently remind you that invoice INV-103, amounting to ₹8000, was due on 2026-05-07. As of today, it’s been 5 days overdue. \n\nIf you’ve already processed the payment, please disregard this note—otherwise, could you let me know when we can expect it? If there’s any issue or you need a copy of the invoice again, just let me know and I’ll send it right over.\n\nThank you so much for your prompt attention to this. Looking forward to settling everything smoothly.\n\nBest regards,\n[Your Name]\n[Your Position]\n[Your Contact Information]",
+        "timestamp": "2026-05-12T17:32:41.798Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly reminder: Invoice INV-103 is overdue",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I wanted to touch base regarding invoice INV-103 for ₹8,000, which was due on May 7, 2026. It’s now 5 days overdue. Could you please let me know if there’s anything you need from us to help settle it? We appreciate your prompt attention and are happy to assist with any questions.\n\nThank you so much!\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-12T19:08:53.152Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly reminder: Invoice INV-103 is overdue",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I wanted to gently remind you that invoice INV-103 for ₹8,000 was due on May 7, 2026, and it’s now 5 days overdue. Could you please let us know if there’s anything we can do to help you with the payment?\n\nWe truly appreciate your business and are happy to assist with any questions you might have.\n\nThank you so much!\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-12T19:17:39.755Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103 is Overdue",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I wanted to gently remind you that Invoice INV-103 (₹8000) was due on May 7th, and we haven’t yet received the payment. It’s only 5 days overdue, so I’m sure it’s just a quick oversight.\n\nCould you please let us know when we might expect the payment? If you’ve already sent it, feel free to disregard this note or let me know the transaction details.\n\nThank you so much for your prompt attention to this matter. I appreciate your continued partnership!\n\nWarm regards,\n[Your Name]\n[Your Position]\n[Company Name]",
+        "timestamp": "2026-05-12T19:45:46.948Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Parsing Error",
+        "body": "```json\n{\n  \"subject\": \"Gentle Reminder: Follow-Up on Invoice INV-103\",\n  \"body\": \"Dear Priya,\\n\\nI hope this message finds you well. We wanted to follow up on Invoice INV-103, which currently shows an outstanding balance of ₹8000. This payment is now 6 days past the due date of 7th May 2026.\\n\\nCould you kindly confirm if the payment has been processed or advise on the expected timeline for clearance? We're always here to assist and ensure everything is resolved smoothly.\\n\\nLooking forward to your update.\\n\\nWarm regards,\\n[Your Name]\\n[Your Position]\\n[Your Company]\"\n}\n```\n",
+        "timestamp": "2026-05-13T06:10:28.301Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103 Overdue",
+        "body": "Dear Priya,\n\nI hope this message finds you well. This is a gentle reminder about Invoice INV-103 for ₹8000, which was due on May 7, 2026. As it is now 6 days overdue, we kindly request your attention to this matter.\n\nIf you have already processed the payment, please ignore this email. Otherwise, we would be grateful if you could arrange for the payment at your earliest convenience. Please let us know if you need any assistance or have any questions.\n\nThank you for your prompt attention to this.\n\nWarm regards,\nThe Finance Team",
+        "timestamp": "2026-05-13T06:11:43.837Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-103 Due",
+        "body": "Hi Priya,\n\nWe noticed your invoice INV-103 for ₹8000 was due on 2026-05-07. We understand things can slip through the cracks, and we're here to help! Could you let us know when we might expect payment? Feel free to reach out if you need any assistance.\n\nThanks so much,\n[Your Company Name]",
+        "timestamp": "2026-05-13T06:13:43.717Z",
+        "status": "AUTO-SENT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Parsing Error",
+        "body": "```json\n{\n  \"subject\": \"Friendly Reminder: Invoice INV-103 Overdue\",\n  \"body\": \"Hi Priya, hope you're having a productive week! We noticed that invoice INV-103 for ₹8000 is now 6 days overdue (due on 2026-05-07). Could you please settle it at your earliest convenience? Let us know if you have questions. Best regards, Finance Team\",\n  \"tone\": \"Warm & friendly\",\n  \"stage\": \"Stage 1\"\n}\n```",
+        "timestamp": "2026-05-13T06:14:59.544Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Following Up on Your Recent Invoice",
+        "body": "Hello Priya, just checking in to see if there's anything we can do to assist you. The invoice number INV-103 for ₹8000 is now past due. With 6 days over due and current on your way, I hope everything checks out. Let's aim to settle this together by the due date.",
+        "timestamp": "2026-05-13T06:21:23.821Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103 Payment Due",
+        "body": "Hi Priya,\n\nJust a friendly reminder that your invoice INV-103 for ₹8000 was due on 2026-05-07 and is now 6 days overdue. We hope all is well and would love to get this settled at your earliest convenience. If you have any questions or need assistance, please don't hesitate to reach out.\n\nThank you for your continued partnership!\n\nBest regards,\n[Your Company]",
+        "timestamp": "2026-05-13T06:21:42.124Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Follow-Up on Invoice INV-103",
+        "body": "Dear Client, Your invoice INV-103 has 7 days overdue. Let's resolve this promptly. Warmly, Team",
+        "timestamp": "2026-05-13T06:46:54.129Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly reminder: Invoice INV-103 is overdue by 7 days",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I wanted to give you a quick heads‑up that invoice INV-103 for ₹8,000 was due on May 6, 2026 and is now 7 days overdue. If you’ve already taken care of this, thank you so much! If not, could you please let me know if there’s anything I can do to help facilitate the payment?\n\nWe truly appreciate your partnership and look forward to continuing our work together.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T09:15:26.772Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-103 is now overdue",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I’m writing to kindly remind you that Invoice INV-103 for ₹8,000, which was due on May 6, 2026, is now 7 days overdue. Could you please let us know if there’s anything we can do to assist with the payment process?\n\nWe truly value our partnership and appreciate your prompt attention to this matter.\n\nThank you so much!\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T11:14:43.406Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103 is overdue by 7 days",
+        "body": "Hi Priya,\n\nI hope you’re doing well! I wanted to gently remind you that invoice INV-103 for ₹8,000 was due on May 6, 2026 and is now 7 days overdue. Could you please let me know if there’s anything you need from our side to facilitate payment?\n\nThank you so much for your attention to this matter. Looking forward to hearing from you soon.\n\nBest regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T11:35:28.001Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103",
+        "body": "Dear Priya Singh,\n\nI hope this message finds you well!\n\nI wanted to gently remind you about Invoice INV-103 for ₹8000, which was due on 2026-05-06. It has been 7 days past the due date, and I understand that things can sometimes get busy.\n\nCould you please take a moment to review and process the payment at your earliest convenience? If you have any questions or need any clarification, please feel free to reach out to me.\n\nThank you so much for your prompt attention to this matter. I truly appreciate your cooperation!\n\nWarm regards",
+        "timestamp": "2026-05-13T11:40:03.457Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-103 – ₹8,000 Overdue",
+        "body": "Hello Priya,\n\nI hope you’re doing well! I’m writing to kindly remind you that Invoice INV-103 for ₹8,000 was due on May 6, 2026 and is now 7 days overdue. Please let us know if there’s anything we can do to assist with the payment process.\n\nYour prompt attention to this matter is greatly appreciated. Thank you for your continued partnership!\n\nWarm regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T11:49:00.315Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle reminder: Invoice INV-103 is pending",
+        "body": "Hi Priya,\n\nI hope you’re doing well. I’m writing to kindly remind you that invoice INV-103 for ₹8000 was due on May 6th and is now 7 days overdue.\n\nCould you please let me know the status of the payment or if there are any issues we can help with? Your prompt attention to this matter would be greatly appreciated.\n\nThank you so much for your cooperation.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Company Name]",
+        "timestamp": "2026-05-13T11:52:41.910Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-103 is 7 days overdue",
+        "body": "Dear Priya,\n\nI hope you’re doing well! This is a gentle reminder that invoice INV-103 for ₹8,000, which was due on May 6, 2026, is now 7 days overdue. We understand that oversights happen, and we’d appreciate it if you could arrange payment at your earliest convenience.\n\nIf you’ve already sent the payment, please disregard this note, and thank you! Should you have any questions or need assistance, feel free to reach out.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T12:33:07.098Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-104",
+    "clientName": "Neha",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-104 is 46 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:14:59.548Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-104 is 46 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:21:23.826Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-104 is 46 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:21:42.129Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent: Overdue Payment Demand – Invoice INV-104",
+        "body": "Dear Vikram Joshi,\n\nThis is a strict reminder regarding the overdue payment for Invoice INV-104. The amount of ₹31,000 remains unpaid as of 2026-04-18, with 25 days now overdue. Immediate settlement is **demanded** to avoid escalation to Stage 5, which may include legal action or financial penalties.\n\nPlease arrange payment via [payment method] by tomorrow, 2026-04-17. Failure to comply will result in severe consequences.\n\nRegards,\n[Your Name/Company]\n",
+        "timestamp": "2026-05-13T06:47:12.965Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Action Required: Overdue Invoice INV-104 – ₹31,000",
+        "body": "Dear Vikram Joshi,\n\nOur records indicate that Invoice INV-104 for ₹31,000, due on 2026-04-18, is now 25 days overdue. This delay is unacceptable and requires your immediate attention.\n\nPlease remit the outstanding amount no later than 2026-05-15 to avoid further penalties or suspension of services. If payment has already been made, forward the confirmation to us promptly.\n\nFailure to address this matter swiftly will result in escalated collection actions.\n\nRegards,\nFinance Department",
+        "timestamp": "2026-05-13T09:15:51.771Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "URGENT: Immediate Payment Required - Invoice INV-104 Overdue by 25 Days",
+        "body": "Dear Vikram Joshi,\n\nThis letter serves as a formal and urgent notice regarding the overdue payment on Invoice INV-104.\n\nInvoice Details:\n- Invoice Number: INV-104\n- Amount Due: ₹31,000\n- Original Due Date: April 18, 2026\n- Days Overdue: 25\n\nDespite multiple reminders, payment remains outstanding. Your account has now reached Stage 4 of our collections process, and we demand immediate resolution.\n\nYou are required to remit the full amount of ₹31,000 within 7 days of this notice. Failure to comply will result in immediate escalation to our legal and collections department, which may include:\n- Reporting to credit bureaus\n- Engagement of third-party collection agencies\n- Legal proceedings to recover outstanding dues\n\nAll additional costs incurred due to delayed payment, including legal fees and interest charges, will be your responsibility.\n\nWe urge you to treat this matter with the utmost seriousness and process payment immediately to avoid further consequences.\n\nPlease confirm payment within 7 business days.\n\nRegards,\nFinance Collections Team",
+        "timestamp": "2026-05-13T11:55:24.900Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent Payment Required – Invoice INV-104",
+        "body": "Dear Mr. Joshi,\\n\\nThis is a final reminder that invoice INV-104 for ₹31,000 is 25 days overdue (due 2026-04-18). Please remit the full amount immediately to avoid further action.\\n\\nRegards,\\n[Your Company]",
+        "timestamp": "2026-05-13T12:33:11.317Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-105",
+    "clientName": "Karan",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-105 Payment of ₹22000 Due",
+        "body": "Hi Karan, I hope you're doing well! I wanted to gently remind you about invoice INV-105 for ₹22000 that was due on May 10th. We noticed it's now 3 days overdue. No worries at all - just wanted to make sure you were aware. Please let me know if you've already sent the payment or if there's anything I can help with. Thanks so much for your continued partnership! Warm regards, [Your Name]",
+        "timestamp": "2026-05-13T06:21:27.538Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly reminder about Invoice INV-105",
+        "body": "Hi Karan,\n\nI hope you're doing well! Just a quick note to follow up on invoice INV-105, which is currently due on 2026-05-10. The amount due is ₹22,000 and it's 3 days past the due date. We understand things get busy, so please let us know if you need any assistance or if there's anything we can do to help.\n\nLooking forward to hearing from you soon!\n\nBest regards,\n[Your Company Name]",
+        "timestamp": "2026-05-13T06:21:47.042Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-105 Due Soon",
+        "body": "Hi Riya,\n\nWe hope you're doing well! This is just a gentle reminder that your invoice INV-105 for ₹6800 was due on 2026-05-12. We noticed it's currently 1 day overdue.\n\nAt Stage 1 of our follow-up process, we'd love to help resolve this smoothly. If there's anything we can do to assist with the payment or if you've already sent it, please let us know!\n\nLooking forward to hearing from you soon.\n\nWarm regards,\n[Your Company Name]",
+        "timestamp": "2026-05-13T06:47:28.101Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder – Invoice INV-105 Payment Due",
+        "body": "Hi Karan,\n\nHope you're doing well! 😊\n\nJust a gentle reminder regarding Invoice #INV-105 for ₹22,000, which was due on 10 May 2026. It looks like it's been 3 days since the due date, and we wanted to check in to see if there's anything we can help with on your end.\n\nWe completely understand that things can get busy, so please don't hesitate to reach out if you have any questions about the invoice or need a little extra time. We're happy to work something out that works for both of us.\n\nLooking forward to hearing from you!\n\nWarm regards,\nFinance Team",
+        "timestamp": "2026-05-13T06:54:06.442Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-105 Due",
+        "body": "Dear Riya,\n\nI hope you’re doing well! This is a gentle reminder that your invoice INV-105 for ₹6800 was due on 2026-05-12. It’s just 1 day past the due date, and we wanted to check in to see if everything is on track for payment.\n\nIf you’ve already sent the payment, thank you! If not, please let us know if there’s anything we can help with. We’re happy to assist and appreciate your prompt attention to this matter.\n\nThank you for your cooperation and continued partnership.\n\nWarm regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T09:16:59.929Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-105 is 1 day overdue",
+        "body": "Hi Riya,\n\nI hope you’re doing well! I wanted to give you a quick heads‑up that Invoice INV-105 for ₹6,800 was due on May 12, 2026 and is now 1 day overdue. Could you please let us know if there’s anything we can do to help facilitate the payment?\n\nThank you so much for your prompt attention to this matter. We truly appreciate your partnership!\n\nWarm regards,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T11:55:33.522Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-105 is Past Due",
+        "body": "Hello Riya,\n\nI hope you’re doing well! I’m writing to gently remind you that Invoice INV-105 for ₹6800 was due on May 12, 2026, and we haven’t yet received payment. It’s only one day overdue, so I understand it might have slipped through the cracks.\n\nCould you please let us know when we can expect the payment or if there’s any issue that we can help resolve? Your prompt attention to this would be greatly appreciated.\n\nThank you so much for your cooperation and for being a valued client. If you need another copy of the invoice or any assistance, just let me know.\n\nWarm regards,\n[Your Name]\n[Your Position]\n[Company Name]\n[Contact Information]",
+        "timestamp": "2026-05-13T12:33:20.628Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-106",
+    "clientName": "Simran",
+    "communicationHistory": [
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Urgent: Overdue Invoice Payment Required",
+        "body": "Dear Simran, this is a final reminder for Invoice INV-106 dated 2026-04-15. The amount of ₹7600 remains unpaid despite being 28 days overdue. Immediate payment is required to avoid further action. Contact us immediately to resolve this matter.",
+        "timestamp": "2026-05-13T06:22:09.186Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Parsing Error",
+        "body": "```json\n{\n  \"subject\": \"URGENT: Final Notice - Overdue Invoice INV-106 - Action Required\",\n  \"body\": \"Dear Simran,\\n\\nThis is our final notice regarding your severely overdue invoice (INV-106) for ₹7600, which was due on 2026-04-15. The payment is now 28 days past due, and this constitutes Stage 4 of our collections process.\\n\\nWe have exhausted all previous attempts to resolve this outstanding balance. Failure to settle this invoice immediately will result in:\\n- Initiation of legal proceedings without further notice\\n- Addition of collection agency fees and penalties\\n- Reporting to credit agencies\\n\\nYou are required to remit the full payment of ₹7600 within 48 hours. No further extensions will be granted.\\n\\nIf payment is not received by [Insert Deadline - e.g., 2026-06-03], we will proceed with immediate action to recover the debt.\\n\\nSincerely,\\nFinance Department\",\n  \"tone\": \"Stern & Urgent\",\n  \"stage\": \"Stage 4\"\n}\n```",
+        "timestamp": "2026-05-13T06:22:30.870Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-106 is 74 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:47:28.104Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Parsing Error",
+        "body": "```json\n{\n  \"subject\": \"Urgent: Overdue Notice for Invoice INV-106\",\n  \"body\": \"Dear Simran,\",\n  \"tone\": \"Stern and Urgent\",\n  \"stage\": \"Stage 4\"\n}\n```",
+        "timestamp": "2026-05-13T06:54:09.876Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-106 is 74 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T09:16:59.948Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-106 is 74 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:55:33.542Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-108",
+    "clientName": "Meera",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-108 is 84 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:09.192Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-108 is 84 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:30.873Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-108 is 64 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:48:07.218Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-108 is 84 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:54:09.883Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-108 is 64 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T09:20:09.087Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-108 is 64 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T11:55:47.471Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-109",
+    "clientName": "Vikram",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-109 is 108 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:09.199Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-109 is 108 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:30.880Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-109 Payment",
+        "body": "Dear Aakash Patel,\n\nI hope this message finds you well. This is a gentle reminder about Invoice INV-109 for ₹13,500, which was due on May 10, 2026. As it is now 3 days overdue, I wanted to kindly check in on the status of this payment.\n\nIf there are any issues or if you need any assistance, please don't hesitate to reach out. We truly value your business and appreciate your prompt attention to this matter.\n\nThank you, and I look forward to hearing from you soon.\n\nBest regards,\nFinance Team",
+        "timestamp": "2026-05-13T06:48:11.766Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-109 is 108 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:54:09.895Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Gentle Reminder: Invoice INV-109 is 3 days overdue",
+        "body": "Hi Aakash,\n\nI hope you’re doing well! I’m writing to kindly remind you that invoice INV-109 for ₹13,500 was due on May 10, 2026 and is now 3 days overdue. Could you please let us know if there’s anything we can assist with to expedite the payment?\n\nThank you so much for your attention to this matter. We truly appreciate your prompt response.\n\nWarm regards,\n[Your Name]\n[Your Company]\n[Contact Information]",
+        "timestamp": "2026-05-13T12:33:43.295Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-111",
+    "clientName": "Rohit",
+    "communicationHistory": [
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Reminder: Invoice INV-111 - Payment Overdue (₹8,700)",
+        "body": "Dear Rohit, I hope this message finds you well. I am writing to follow up regarding Invoice INV-111 for ₹8,700, which was due on 2026-04-30. As per our records, the payment is currently 13 days overdue. We understand that oversights can happen; however, we kindly request that you arrange the outstanding payment at your earliest convenience. Timely payments are essential for us to continue providing you with uninterrupted services. Please review the invoice details and process the payment by return mail or reach out to us if you have already sent the payment. Should you have any questions or need to discuss an alternative payment arrangement, please do not hesitate to contact us. We truly value your partnership and look forward to resolving this matter promptly. Warm regards, Finance Team",
+        "timestamp": "2026-05-13T06:22:12.650Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Urgent: Overdue Invoice Payment Reminder for INV-111",
+        "body": "Dear Rohit,\n\nWe hope this message finds you well. We are writing to follow up on your outstanding invoice (INV-111) dated 2026-04-30 for ₹8700. As of today, this payment is 13 days overdue.\n\nAs part of Stage 2 of our follow-up process, we kindly request you to process the payment at your earliest convenience to avoid any further action. Should you have already made the payment, please disregard this notice and accept our apologies.\n\nPlease confirm receipt of this email and your intended payment timeline. For immediate processing, reply with \"PAY NOW\" and we will expedite the payment link.\n\nThank you for your prompt attention.",
+        "timestamp": "2026-05-13T06:22:47.233Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Urgent Follow-Up on Overdue Invoice INV-111",
+        "body": "Dear Simran Kaur, We are writing to follow up on your outstanding payment for invoice INV-111. The amount due is ₹7600, which has now exceeded the due date of April 26, 2026, by 17 days. As this is stage 3 of our payment process, we must emphasize the seriousness of this matter. Immediate action is required to resolve this overdue amount. Please arrange for the prompt payment to avoid further actions. This is a formal and serious reminder. Kindly confirm receipt and processing of this payment at your earliest. Sincerely, [Your Name/Company]",
+        "timestamp": "2026-05-13T06:48:28.275Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 2",
+        "tone": "Polite & firm",
+        "subject": "Finance Follow-Up",
+        "body": "Dear Client, Your invoice INV-111 for ₹8700 is 13 days overdue. Current Stage 2 requires attention to resolve promptly.",
+        "timestamp": "2026-05-13T06:54:23.730Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Urgent: Payment Overdue – Invoice INV-111",
+        "body": "Dear Simran Kaur,\n\nWe hope this message finds you well. We are writing to follow up on Invoice INV-111, which was due on 2026-04-26.\n\nAs of today, the invoice is 17 days overdue, with an outstanding amount of ₹7600.\n\nWe kindly request that you process this payment at your earliest convenience to avoid any further delays. If there are any discrepancies or if you require assistance regarding the invoice, please do not hesitate to contact us.\n\nPlease confirm the expected payment date at your earliest convenience.\n\nThank you for your prompt attention to this matter.\n\nSincerely,\nFinance Department",
+        "timestamp": "2026-05-13T12:34:29.524Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-112",
+    "clientName": "Pooja",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-112 is 64 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:12.655Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-112 is 64 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:47.242Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-112 is 54 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:48:28.282Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-112 is 64 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:54:23.738Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-113",
+    "clientName": "Dev",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-113 is Overdue",
+        "body": "Hi Dev,\n\nI hope you’re doing well! I wanted to touch base regarding Invoice INV-113, which was due on May 8th. It looks like it’s currently 5 days overdue, with an outstanding amount of ₹5300. Whenever you get a moment, could you please arrange the payment or let me know if there’s any issue? Your prompt attention is greatly appreciated.\n\nThank you so much for your cooperation!\n\nBest regards,\n[Your Name]",
+        "timestamp": "2026-05-13T06:22:20.973Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice Due Soon",
+        "body": "Hi Dev,\n\nI hope this message finds you well! Just a gentle reminder that invoice INV-113 for ₹5300 was due on 2026-05-08. In case you've already processed the payment, please disregard this note. If there's anything I can assist with, feel free to reach out!\n\nLooking forward to hearing from you.\n\nBest regards,\n[Your Name]",
+        "timestamp": "2026-05-13T06:22:57.322Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Payment for Invoice INV-113 Due on 2026-05-09",
+        "body": "Hi Nandini,\n\nI hope you're doing well! Just wanted to check in about your invoice INV-113 for ₹9200, which is due on 2026-05-09. It seems the payment is 4 days overdue now. Could you kindly make the payment at your earliest convenience? Don’t hesitate to reach out if you need any assistance—I’m happy to help!\n\nWarm regards,\n[Your Name]",
+        "timestamp": "2026-05-13T06:48:52.842Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-113 Due",
+        "body": "Hi Dev,\n\nI hope you're doing well! I wanted to gently remind you that Invoice INV-113 for ₹5300 was due on 2026-05-08 and is currently 5 days overdue. We understand things can slip through the cracks, so please let me know if there's anything I can assist with to help process the payment.\n\nLooking forward to your response.\n\nBest regards,\n[Your Name]",
+        "timestamp": "2026-05-13T06:54:52.311Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-113 is now 4 days overdue",
+        "body": "Hi Nandini,\n\nI hope you’re doing well! I’m writing to gently remind you that Invoice INV-113 for ₹9200 was due on 2026-05-09. It appears to be 4 days overdue. If you’ve already made the payment, please disregard this notice. Otherwise, could you kindly let me know your payment status? If there’s any issue or if you need additional details, I’m here to help.\n\nThank you so much for your attention to this matter, and I appreciate your prompt response.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Name]\n[Contact Information]",
+        "timestamp": "2026-05-13T12:34:43.932Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-114",
+    "clientName": "Sneha",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-114 is 38 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:20.977Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-114 is 38 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:57.327Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-114 is 34 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:48:52.898Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-114 is 38 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:54:52.323Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-115",
+    "clientName": "Yash",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-115 is 134 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:20.981Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-115 is 134 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:22:57.334Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-115 is 42 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:48:52.909Z",
+        "status": "FLAGGED"
+      },
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-115 is 134 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:54:52.342Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-107",
+    "clientName": "Neha Verma",
+    "communicationHistory": [
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Final Reminder: Overdue Payment for Invoice INV-107",
+        "body": "Dear Ms. Verma,\n\nThis is a formal notice regarding the outstanding payment of ₹15000 for Invoice INV-107, which was due on 2026-04-28. As of today, the payment remains overdue by 15 days. This constitutes Stage 3 of our collections process.\n\nWe strongly urge you to settle the full amount immediately to avoid further escalation. Kindly confirm payment or provide a written explanation for the delay within 48 hours.\n\nFailure to comply may result in legal proceedings and potential impact on your credit standing.\n\nWe expect your prompt attention to this matter.\n\nSincerely,\n[Your Name]\n[Your Position]\n[Company Name]",
+        "timestamp": "2026-05-13T06:48:07.206Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Urgent: Overdue Invoice INV-107 – Payment Request",
+        "body": "Dear Neha Verma,\n\nI hope this message finds you well. This is a formal follow-up regarding Invoice INV-107 for the amount of ₹15000, which was due on 2026-04-28. As of today, the invoice is 15 days overdue.\n\nWe kindly request that you process the payment at your earliest convenience to avoid any further delays. Please let us know if you encounter any issues or require additional information to facilitate the payment.\n\nThank you for your prompt attention to this matter.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Company Name]\n[Contact Information]",
+        "timestamp": "2026-05-13T09:20:09.074Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Final Notice: Overdue Invoice INV-107 – Immediate Payment Required",
+        "body": "Dear Ms. Verma,\n\nOur records indicate that Invoice INV-107, dated 2026-04-13 for ₹15,000, remains unpaid and is now 15 days past its due date of 2026-04-28. This correspondence serves as a final reminder to settle the outstanding amount without further delay.\n\nPlease arrange payment by the close of business on 2026-05-20 to avoid escalation of collection procedures. If you have already remitted the funds, kindly provide the transaction reference for our records.\n\nFor your convenience, payment can be made via the usual bank transfer details provided on the original invoice. Should you require any clarification, contact our accounts department at finance@example.com.\n\nThank you for your immediate attention to this serious matter.\n\nSincerely,\nFinance Collections Team",
+        "timestamp": "2026-05-13T11:55:47.451Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Final Notice: Invoice INV-107 – Payment Overdue by 15 Days",
+        "body": "Dear Ms. Verma,\n\nOur records indicate that payment of ₹15,000 for Invoice INV-107, which was due on 2026-04-28, remains outstanding. As of today, the invoice is 15 days overdue.\n\nPlease arrange for the full payment immediately to avoid further action. If you have already submitted payment, kindly disregard this notice and accept our thanks.\n\nFor any queries or to discuss payment arrangements, contact us promptly.\n\nSincerely,\nFinance Department",
+        "timestamp": "2026-05-13T12:33:34.772Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-110",
+    "clientName": "Anjali Desai",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-110 is 33 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:48:11.769Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-116",
+    "clientName": "Amit Sharma",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly reminder: Invoice INV-116 is overdue",
+        "body": "Hi Amit,\n\nI hope you’re doing well! I’m writing to kindly remind you that invoice INV-116 for ₹12,000 was due on May 7, 2026, and it is now 6 days past due. Could you please let us know if there’s anything we can do to assist with the payment?\n\nWe truly appreciate your business and look forward to continuing our partnership.\n\nThank you so much,\n[Your Name]\n[Your Company]",
+        "timestamp": "2026-05-13T06:49:15.621Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-116",
+        "body": "Dear Amit Sharma,\n\nI hope this message finds you well!\n\nI wanted to reach out in a friendly manner regarding Invoice INV-116 for ₹12,000 which was due on May 7, 2026. I understand things can get busy, and this is just a gentle reminder that the payment is now 6 days overdue.\n\nPlease feel free to let me know if you have any questions or if there's anything I can assist with regarding this invoice. Your prompt attention to this matter would be greatly appreciated.\n\nThank you for your cooperation, and I look forward to hearing from you soon!\n\nBest regards",
+        "timestamp": "2026-05-13T12:34:56.231Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-117",
+    "clientName": "Pooja Pillai",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-117 is 35 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:49:15.704Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-118",
+    "clientName": "Harish Menon",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Parsing Error",
+        "body": "{\n  \"subject\": \"Following Up on Your Invoice INV-118\",\n  \"body\": \"Hi Harish,\n  \n  Thank you for your recent payment. We currently have your invoice INV-118 for ₹21000 due by 2026-05-07. As of today, it is 6 days overdue and we are at Stage 1 of our follow-up process.\n  \n  We appreciate your continued support and will ensure timely settlement. Please let us know if you have any questions or need assistance.\n  \n  Best regards,\n  Your Finance Team\",\n  \"tone\": \"warm & friendly\",\n  \"stage\": \"Stage 1\"\n}",
+        "timestamp": "2026-05-13T06:49:18.580Z",
+        "status": "DRAFT"
+      },
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-118 Payment Due",
+        "body": "Dear Harish Menon,\n\nI hope this email finds you well.\n\nI wanted to gently remind you that Invoice INV-118 for ₹21,000 was due on May 7, 2026, and is currently 6 days overdue.\n\nI understand things can get busy, and this may have slipped your mind. Could you please check and let us know the status of the payment? If you have any questions or need any clarification, please feel free to reach out.\n\nWe truly appreciate your prompt attention to this matter and look forward to continuing our great working relationship.\n\nThank you for your time.\n\nBest regards",
+        "timestamp": "2026-05-13T12:35:07.831Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-119",
+    "clientName": "Sneha Bose",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-119 is 39 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:49:18.585Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-120",
+    "clientName": "Karan Mehta",
+    "communicationHistory": [
+      {
+        "stage": "Stage 3",
+        "tone": "Formal & serious",
+        "subject": "Urgent: Overdue Invoice Reminder - Immediate Payment Required",
+        "body": "Dear Karan Mehta, This is a formal notification regarding your overdue invoice INV-120 dated 2026-04-27 for an amount of ₹22000, currently 16 days overdue. As this account has progressed to Stage 3 of our collection process, we require immediate settlement of the outstanding balance. Failure to remit payment within 24 hours will result in escalation to legal proceedings. Please confirm payment or contact our office immediately to resolve this matter. Sincerely, [Your Company Name]",
+        "timestamp": "2026-05-13T06:49:41.629Z",
+        "status": "DRAFT"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-121",
+    "clientName": "Meera Iyer",
+    "communicationHistory": [
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "Immediate Action Required: Invoice INV-121 Overdue by 24 Days",
+        "body": "Dear Meera Iyer,\n\nOur records indicate that Invoice INV-121, amounting to ₹9,800, was due on 2026-04-19 and is now 24 days overdue. This payment is critically overdue and must be settled immediately to avoid further penalties or service interruption.\n\nPlease remit the full amount no later than 24 hours from receipt of this email. If you have already made the payment, forward the confirmation to us at once.\n\nFailure to comply will result in additional collection actions.\n\nSincerely,\nFinance Department",
+        "timestamp": "2026-05-13T06:49:53.705Z",
+        "status": "DRAFT"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-122",
+    "clientName": "Yash Kapoor",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-122 is 40 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:49:53.712Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-123",
+    "clientName": "Swati Jain",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Friendly Reminder: Invoice INV-123 Due",
+        "body": "Dear Swati, I hope this message finds you well. This is a gentle reminder about invoice INV-123 for ₹4700, which was due on 2026-05-06. As it's now 7 days overdue, we kindly request your attention to this matter. Please let us know if there's anything we can assist with. Thank you for your prompt payment.",
+        "timestamp": "2026-05-13T06:49:56.504Z",
+        "status": "DRAFT"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-124",
+    "clientName": "Dev Malhotra",
+    "communicationHistory": [
+      {
+        "stage": "ESCALATED",
+        "tone": "Legal review",
+        "subject": "Flagged for legal review",
+        "body": "Invoice INV-124 is 38 days overdue. Assigned to finance manager for manual review. No automated email sent.",
+        "timestamp": "2026-05-13T06:49:56.509Z",
+        "status": "FLAGGED"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-125",
+    "clientName": "Arjun Nair",
+    "communicationHistory": [
+      {
+        "stage": "Stage 4",
+        "tone": "Stern & Urgent",
+        "subject": "URGENT: Final Notice for Overdue Invoice INV-125 - Arjun Nair",
+        "body": "Dear Arjun Nair,\n\nThis is a formal and urgent follow-up regarding Invoice INV-125 for ₹4500, which was due on 2026-04-20 and is now 23 days overdue. Despite prior communications, payment remains outstanding.\n\nWe demand immediate settlement of the full amount to avoid escalation to legal proceedings or collections. Your prompt action is non-negotiable.\n\nIf payment is not received within 48 hours, we will proceed with further recovery actions without additional notice.\n\nSincerely,\nFinance Team",
+        "timestamp": "2026-05-13T06:50:01.333Z",
+        "status": "DRAFT"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "TEST-001",
+    "clientName": "Test Client",
+    "communicationHistory": [
+      {
+        "stage": "Stage 1",
+        "tone": "Warm & friendly",
+        "subject": "Test Subject",
+        "body": "Test Body",
+        "timestamp": "2026-05-13T11:29:03.929Z",
+        "status": "AGENT-GENERATED"
+      }
+    ]
+  }
+]

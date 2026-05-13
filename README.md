@@ -1,0 +1,285 @@
+## Finance Credit Follow-Up Email Agent
+
+An AI-powered agent that automatically generates personalized follow-up emails for overdue invoices, escalating tone progressively based on the number of days overdue — reducing DSO while preserving client relationships.
+
+
+## Table of Contents:
+
+- [Project Overview](#project-overview)
+- [Agent Architecture](#agent-architecture)
+- [Tech Stack & Decision Log](#tech-stack--decision-log)
+- [Tone Escalation Matrix](#tone-escalation-matrix)
+- [Security Mitigations](#security-mitigations)
+- [Setup Instructions](#setup-instructions)
+- [Environment Variables](#environment-variables)
+- [API Endpoints](#api-endpoints)
+- [Future Improvements](#future-improvements)
+
+## Project Overview
+
+Finance teams spend significant time manually chasing overdue payments. This process is inconsistent in tone and timing, risks client relationships, and increases Days Sales Outstanding (DSO).
+
+This agent solves that by:
+
+- Ingesting invoice data from CSV automatically
+- Classifying each overdue invoice into an escalation stage (Stage 1–4 or Legal Flag)
+- Using an LLM to generate personalized, professional emails at the correct tone level
+- Logging every generated email with timestamp, tone, and status for full audit coverage
+- Scheduling daily automated checks via cron
+- Flagging severely overdue (30+ days) accounts for manual legal review instead of continuing auto-emails
+- Providing a React dashboard for finance teams to monitor queue, trigger generation, and review logs
+
+## Agent Architecture
+
+```
+Frontend (React + Vite)
+         │
+         ▼
+Backend API (Express.js)
+         │
+         ├── CSV Invoice Reader       →  reads invoices.csv
+         │
+         ├── Escalation Engine        →  maps overdue days to stage + tone
+         │
+         ├── AI Email Generator       →  calls OpenRouter LLM
+         │
+         ├── Audit Logger             →  writes to logs/emailLogs.json
+         │
+         ├── Scheduler (node-cron)    →  runs daily at 10:00 AM
+         │
+         └── LangChain ReAct Agent    →  orchestrates tools autonomously
+                    │
+                    ├── Tool: read_invoices
+                    ├── Tool: calculate_stage
+                    ├── Tool: generate_email
+                    └── Tool: save_logs
+```
+
+### LangChain ReAct Agent Flow
+
+```
+Agent receives task
+      │
+      ▼
+[Reason] Which tool do I need next?
+      │
+      ▼
+[Act] Execute tool (read / calculate / generate / log)
+      │
+      ▼
+[Observe] Read tool output
+      │
+      ▼
+Repeat until all invoices processed → Return summary
+```
+
+The agent uses a **ReAct (Reason + Act)** loop — instead of hardcoded procedural steps, the LLM dynamically decides which tool to call next based on observations, making it adaptable to varying invoice states.
+
+## Tech Stack & Decision Log
+
+### LLM — OpenRouter (Free Tier Routing)
+
+| Field    | Detail                                      |
+|----------|---------------------------------------------|
+| Provider | OpenRouter (`https://openrouter.ai/api/v1`) |
+| Endpoint | `/chat/completions`                         |
+| Why      | Provides free-tier access to multiple LLMs (GPT, Claude, Llama) under one API key — ideal for prototyping without committing to a single provider's billing. No upfront cost, easy model switching. |
+
+### Agent Framework — LangChain (ReAct)
+
+| Field     | Detail                                                                                      |
+|-----------|---------------------------------------------------------------------------------------------|
+| Framework | LangChain — `createReactAgent()`                                                            |
+| Architecture | ReAct loop — the agent reasons about the current state, selects a tool, executes it, and observes results before deciding the next step |
+| Why LangChain | First-class tool-calling support, built-in ReAct agent primitives, easy integration with any LLM endpoint, strong community support |
+| Why ReAct | More robust than a simple chain for multi-step workflows — the agent can handle variable invoice counts and skip non-overdue records without needing hardcoded branching |
+
+### Scheduling — node-cron
+
+Runs the full invoice check + email generation workflow daily at **10:00 AM** automatically. No manual trigger needed in production.
+
+### Storage
+
+| Layer       | Technology         | Reason                                              |
+|-------------|-------------------|-----------------------------------------------------|
+| Invoice data | CSV (`invoices.csv`) | Lightweight, portable, no DB setup required for prototype |
+| Audit logs  | JSON (`emailLogs.json`) | Human-readable, easy to query for dashboard, sufficient for prototype scale |
+
+### Frontend — React + Vite + Recharts
+
+Dashboard provides: invoice queue view, email generation trigger, agent trigger, audit log viewer, escalation analytics (PieChart + BarChart).
+
+## Prompt Design
+
+### System Prompt
+
+```
+You are a professional finance collections assistant.
+Generate follow-up emails that match the provided tone and stage exactly.
+Return ONLY valid JSON. No extra text, no markdown, no explanation.
+```
+
+### User Prompt Structure
+
+```
+Client: {clientName}
+Invoice: {invoiceNumber}
+Amount: {amount}
+Due Date: {dueDate}
+Days Overdue: {daysOverdue}
+Stage: {stage}
+Tone: {tone}
+
+Return JSON: { "subject": "...", "body": "...", "tone": "...", "stage": "..." }
+```
+
+**Guardrails applied:**
+- `Return ONLY valid JSON` prevents markdown fences and prose responses
+- All invoice fields injected from data source — LLM cannot fabricate client details
+- `JSON.parse()` validation on every response with structured fallback on failure
+- System prompt enforces professional finance persona to reduce off-topic outputs
+
+## Tone Escalation Matrix
+
+| Stage      | Trigger          | Tone              | Key Message                              | CTA                        |
+|------------|-----------------|-------------------|------------------------------------------|----------------------------|
+| Stage 1    | 1–7 days overdue  | Warm & Friendly   | Gentle reminder, assume oversight        | Pay now link / bank details |
+| Stage 2    | 8–14 days overdue | Polite but Firm   | Payment still pending; request confirmation | Confirm payment date      |
+| Stage 3    | 15–21 days overdue| Formal & Serious  | Escalating concern; mention credit impact | Respond within 48 hrs     |
+| Stage 4    | 22–30 days overdue| Stern & Urgent    | Final reminder before escalation         | Pay immediately or call us |
+| Escalated  | 30+ days overdue  | 🚩 Legal Flag     | No auto-email — flagged for human review | Assigned to finance manager|
+
+## Security Mitigations
+
+| Risk | Mitigation Applied |
+|------|--------------------|
+| **API Key Exposure** | All keys stored in `.env` via `dotenv`. `.env` added to `.gitignore`. A `.env.example` with placeholder values is committed instead. Keys never hardcoded in source. |
+| **Prompt Injection** | Invoice fields are injected into a structured prompt template. System prompt instructs the model to return only JSON, limiting the blast radius of any injected content in invoice fields. |
+| **Hallucination Risk** | Structured JSON output enforced via system prompt. Every response is validated with `JSON.parse()`. Fallback object returned on parse failure — no partial/hallucinated data reaches logs or frontend. |
+| **Unauthorised Access** | ⚠️ Currently no authentication on API endpoints. Mitigation planned: JWT middleware or API key header check on all routes. |
+| **Rate Limiting** | ⚠️ Not yet implemented. Planned: `express-rate-limit` to prevent abuse of `/generate-email` and `/agent-generate`. |
+| **PII in Logs** | Client names and email content are stored in `emailLogs.json`. For production: PII fields should be masked or encrypted at rest. |
+| **Input Validation** | ⚠️ CSV values are currently trusted directly. Planned: schema validation on ingested rows (date formats, amount ranges, email format). |
+| **Email Spoofing (Task 2)** | Currently in dry-run/mock mode — no real emails sent. For production SMTP: SPF/DKIM/DMARC records required on sender domain; verified sender address enforced by email provider. |
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js v18+
+- npm
+- OpenRouter API key ([openrouter.ai](https://openrouter.ai))
+
+
+### Backend
+
+```bash
+cd backend
+npm install
+```
+
+Create your `.env` file (see [Environment Variables](#environment-variables) below), then:
+
+```bash
+npm start
+```
+
+Backend runs at `http://localhost:3000`
+
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at `http://localhost:5173`
+
+
+### Invoice Data
+
+Edit `backend/invoices.csv` to add your invoice records:
+
+```csv
+invoiceNumber,clientName,amount,dueDate,contactEmail,followUpCount
+INV001,Rajesh Kumar,45000,2025-04-20,rajesh@example.com,0
+INV002,Priya Sharma,28000,2025-04-10,priya@example.com,1
+```
+
+
+## Environment Variables
+
+Create a `.env` file inside `backend/`:
+
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+PORT=3000
+```
+
+A `.env.example` is included in the repo with placeholder values.
+
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/` | Health check |
+| `GET` | `/invoices` | Returns all invoices enriched with overdue days, stage, and tone |
+| `POST` | `/generate-email` | Generates AI emails for all overdue invoices and saves audit logs |
+| `POST` | `/send-email` | Mock sends email and updates log status |
+| `GET` | `/logs` | Returns full audit log from `emailLogs.json` |
+| `POST` | `/agent-generate` | Triggers LangChain ReAct agent to orchestrate full workflow autonomously |
+
+
+## Project Structure
+
+```
+Follow-up Email Agent/
+│
+├── backend/
+│   ├── agent/
+│   │   └── invoiceAgent.js        # LangChain ReAct agent with tools
+│   │
+│   ├── services/
+│   │   ├── aiServices.js          # OpenRouter LLM integration
+│   │   ├── escalationEngine.js    # Overdue days → stage + tone logic
+│   │   ├── csvServices.js         # CSV reader
+│   │   ├── logService.js          # Audit log writer
+│   │   └── schedular.js           # node-cron daily scheduler
+│   │
+│   ├── logs/
+│   │   └── emailLogs.json         # Audit trail
+│   │
+│   ├── invoices.csv               # Invoice data source
+│   ├── server.js                  # Express API entry point
+│   ├── .env                       # Secret keys (not committed)
+│   ├── .env.example               # Placeholder env template
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx                # Main dashboard
+│   │   ├── LogsPage.jsx           # Audit log viewer
+│   │   ├── App.css
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+└── package.json
+```
+
+## Future Improvements
+
+- **Real email sending** — integrate SendGrid or Mailgun with verified sender domain + SPF/DKIM/DMARC
+- **Database migration** — replace CSV + JSON with PostgreSQL or MongoDB for scale
+- **Authentication** — JWT middleware on all API routes; role-based access for finance managers
+- **Rate limiting** — `express-rate-limit` on generation endpoints
+- **Input validation** — schema validation on CSV ingestion (date formats, amounts, emails)
+- **Async queue** — BullMQ + Redis for non-blocking email generation at scale
+- **PII masking** — encrypt or mask client names and email content in audit logs
+- **Monitoring** — Winston structured logging + observability dashboard
+- **Prompt injection hardening** — sanitize invoice field values before injecting into prompts
+- **Retry logic** — exponential backoff on LLM API failures

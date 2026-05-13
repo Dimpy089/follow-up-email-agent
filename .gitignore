@@ -1,0 +1,14 @@
+node_modules/
+frontend/node_modules/
+
+dist/
+.dist/
+build/
+
+.env
+.env.local
+
+.DS_Store
+__MACOSX/
+
+npm-debug.log*
