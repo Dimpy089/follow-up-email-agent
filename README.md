@@ -84,13 +84,15 @@ The agent uses a **ReAct (Reason + Act)** loop — instead of hardcoded procedur
 
 ## Tech Stack & Decision Log
 
-### LLM — OpenRouter (Free Tier Routing)
+### LLM — GPT-4o-mini via OpenRouter
 
 | Field    | Detail                                      |
 |----------|---------------------------------------------|
 | Provider | OpenRouter (`https://openrouter.ai/api/v1`) |
+| Model    | `openai/gpt-4o-mini`                        |
 | Endpoint | `/chat/completions`                         |
-| Why      | Provides free-tier access to multiple LLMs (GPT, Claude, Llama) under one API key — ideal for prototyping without committing to a single provider's billing. No upfront cost, easy model switching. |
+| Why this model | GPT-4o-mini offers GPT-4 class instruction following at a fraction of the cost. Strong JSON output reliability makes it ideal for structured email generation. Chosen over GPT-4o (unnecessarily expensive for this task) and Llama 3 (weaker JSON consistency in testing). |
+| Why OpenRouter | Single API key provides access to multiple LLM providers — ideal for prototyping without committing to direct OpenAI billing. Easy model switching with no code changes. |
 
 ### Agent Framework — LangChain (ReAct)
 
