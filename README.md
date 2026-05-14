@@ -1,9 +1,10 @@
-## Finance Credit Follow-Up Email Agent
+# Finance Credit Follow-Up Email Agent
 
 An AI-powered agent that automatically generates personalized follow-up emails for overdue invoices, escalating tone progressively based on the number of days overdue — reducing DSO while preserving client relationships.
 
+---
 
-## Table of Contents:
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Agent Architecture](#agent-architecture)
@@ -14,6 +15,8 @@ An AI-powered agent that automatically generates personalized follow-up emails f
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Future Improvements](#future-improvements)
+
+---
 
 ## Project Overview
 
@@ -28,6 +31,8 @@ This agent solves that by:
 - Scheduling daily automated checks via cron
 - Flagging severely overdue (30+ days) accounts for manual legal review instead of continuing auto-emails
 - Providing a React dashboard for finance teams to monitor queue, trigger generation, and review logs
+
+---
 
 ## Agent Architecture
 
@@ -75,6 +80,8 @@ Repeat until all invoices processed → Return summary
 
 The agent uses a **ReAct (Reason + Act)** loop — instead of hardcoded procedural steps, the LLM dynamically decides which tool to call next based on observations, making it adaptable to varying invoice states.
 
+---
+
 ## Tech Stack & Decision Log
 
 ### LLM — OpenRouter (Free Tier Routing)
@@ -109,6 +116,8 @@ Runs the full invoice check + email generation workflow daily at **10:00 AM** au
 
 Dashboard provides: invoice queue view, email generation trigger, agent trigger, audit log viewer, escalation analytics (PieChart + BarChart).
 
+---
+
 ## Prompt Design
 
 ### System Prompt
@@ -139,6 +148,8 @@ Return JSON: { "subject": "...", "body": "...", "tone": "...", "stage": "..." }
 - `JSON.parse()` validation on every response with structured fallback on failure
 - System prompt enforces professional finance persona to reduce off-topic outputs
 
+---
+
 ## Tone Escalation Matrix
 
 | Stage      | Trigger          | Tone              | Key Message                              | CTA                        |
@@ -149,6 +160,8 @@ Return JSON: { "subject": "...", "body": "...", "tone": "...", "stage": "..." }
 | Stage 4    | 22–30 days overdue| Stern & Urgent    | Final reminder before escalation         | Pay immediately or call us |
 | Escalated  | 30+ days overdue  | 🚩 Legal Flag     | No auto-email — flagged for human review | Assigned to finance manager|
 
+---
+
 ## Security Mitigations
 
 | Risk | Mitigation Applied |
@@ -156,11 +169,13 @@ Return JSON: { "subject": "...", "body": "...", "tone": "...", "stage": "..." }
 | **API Key Exposure** | All keys stored in `.env` via `dotenv`. `.env` added to `.gitignore`. A `.env.example` with placeholder values is committed instead. Keys never hardcoded in source. |
 | **Prompt Injection** | Invoice fields are injected into a structured prompt template. System prompt instructs the model to return only JSON, limiting the blast radius of any injected content in invoice fields. |
 | **Hallucination Risk** | Structured JSON output enforced via system prompt. Every response is validated with `JSON.parse()`. Fallback object returned on parse failure — no partial/hallucinated data reaches logs or frontend. |
-| **Unauthorised Access** | ⚠️ Currently no authentication on API endpoints. Mitigation planned: JWT middleware or API key header check on all routes. |
-| **Rate Limiting** | ⚠️ Not yet implemented. Planned: `express-rate-limit` to prevent abuse of `/generate-email` and `/agent-generate`. |
+| **Unauthorised Access** | API key middleware implemented on `/agent-generate` and `/generate-email` endpoints. Requests without a valid `x-api-key` header are rejected with `401 Unauthorised`. Key stored in `.env` on both backend and frontend — never hardcoded. |
+| **Rate Limiting** | `express-rate-limit` implemented on `/generate-email` and `/agent-generate` — capped at 20 requests per 15-minute window. Prevents abuse and protects OpenRouter API quota. |
 | **PII in Logs** | Client names and email content are stored in `emailLogs.json`. For production: PII fields should be masked or encrypted at rest. |
 | **Input Validation** | ⚠️ CSV values are currently trusted directly. Planned: schema validation on ingested rows (date formats, amount ranges, email format). |
 | **Email Spoofing (Task 2)** | Currently in dry-run/mock mode — no real emails sent. For production SMTP: SPF/DKIM/DMARC records required on sender domain; verified sender address enforced by email provider. |
+
+---
 
 ## Setup Instructions
 
@@ -170,6 +185,7 @@ Return JSON: { "subject": "...", "body": "...", "tone": "...", "stage": "..." }
 - npm
 - OpenRouter API key ([openrouter.ai](https://openrouter.ai))
 
+---
 
 ### Backend
 
@@ -186,6 +202,7 @@ npm start
 
 Backend runs at `http://localhost:3000`
 
+---
 
 ### Frontend
 
@@ -197,6 +214,7 @@ npm run dev
 
 Frontend runs at `http://localhost:5173`
 
+---
 
 ### Invoice Data
 
@@ -208,6 +226,7 @@ INV001,Rajesh Kumar,45000,2025-04-20,rajesh@example.com,0
 INV002,Priya Sharma,28000,2025-04-10,priya@example.com,1
 ```
 
+---
 
 ## Environment Variables
 
@@ -215,23 +234,34 @@ Create a `.env` file inside `backend/`:
 
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key_here
+INTERNAL_API_KEY=your_secret_api_key_here
 PORT=3000
 ```
 
+Create a `.env` file inside `frontend/`:
+
+```env
+VITE_API_KEY=your_secret_api_key_here
+```
+
+> The `INTERNAL_API_KEY` and `VITE_API_KEY` must match — this is the shared secret used to authenticate frontend requests to protected endpoints.
+
 A `.env.example` is included in the repo with placeholder values.
 
+---
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/` | Health check |
-| `GET` | `/invoices` | Returns all invoices enriched with overdue days, stage, and tone |
-| `POST` | `/generate-email` | Generates AI emails for all overdue invoices and saves audit logs |
-| `POST` | `/send-email` | Mock sends email and updates log status |
-| `GET` | `/logs` | Returns full audit log from `emailLogs.json` |
-| `POST` | `/agent-generate` | Triggers LangChain ReAct agent to orchestrate full workflow autonomously |
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| `GET` | `/` | Health check | No |
+| `GET` | `/invoices` | Returns all invoices enriched with overdue days, stage, and tone | No |
+| `GET` | `/generate-email` | Generates AI emails for all overdue invoices and saves audit logs | Yes |
+| `POST` | `/send-email` | Mock sends email and updates log status | No |
+| `GET` | `/logs` | Returns full audit log from `emailLogs.json` | No |
+| `GET` | `/agent-generate` | Triggers LangChain ReAct agent to orchestrate full workflow autonomously | Yes |
 
+---
 
 ## Project Structure
 
@@ -265,18 +295,21 @@ Follow-up Email Agent/
 │   │   ├── App.css
 │   │   └── main.jsx
 │   │
+│   ├── .env                       # Frontend env vars (not committed)
+│   ├── .env.example               # Placeholder env template
 │   ├── package.json
 │   └── vite.config.js
 │
 └── package.json
 ```
 
+---
+
 ## Future Improvements
 
 - **Real email sending** — integrate SendGrid or Mailgun with verified sender domain + SPF/DKIM/DMARC
 - **Database migration** — replace CSV + JSON with PostgreSQL or MongoDB for scale
-- **Authentication** — JWT middleware on all API routes; role-based access for finance managers
-- **Rate limiting** — `express-rate-limit` on generation endpoints
+- **JWT Authentication** — replace API key auth with JWT middleware and role-based access for finance managers
 - **Input validation** — schema validation on CSV ingestion (date formats, amounts, emails)
 - **Async queue** — BullMQ + Redis for non-blocking email generation at scale
 - **PII masking** — encrypt or mask client names and email content in audit logs
