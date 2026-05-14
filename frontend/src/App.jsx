@@ -37,7 +37,9 @@ function App() {
   const handleRunAgent = async () => {
     try {
         setAgentLoading(true);
-        const response = await fetch("http://localhost:3000/agent-generate");
+        const response = await fetch("http://localhost:3000/agent-generate",{
+          headers: { 'x-api-key': import.meta.env.VITE_API_KEY }
+        });
         const data = await response.json();
         alert(data.output);
         fetchInvoices();
@@ -50,7 +52,9 @@ function App() {
   const handleGenerateEmail = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/generate-email");
+      const response = await fetch("http://localhost:3000/generate-email",{
+        headers: { 'x-api-key': import.meta.env.VITE_API_KEY }
+      });
       const data = await response.json();
       const emailMap = {};
       data.forEach((item) => {

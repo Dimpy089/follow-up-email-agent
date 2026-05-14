@@ -9,20 +9,38 @@ const generateEmail = require("./services/aiServices");
 const saveLog = require("./services/logService");
 const fs = require("fs");
 const {startScheduler} =require("./services/schedular");
-const { runInvoiceAgent } = require("./agent/invoiceAgent"); 
+const { runInvoiceAgent } = require("./agent/invoiceAgent");
+const rateLimit =require("express-rate-limit");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,max: 20
+});
+const authenticate = (req, res, next) => {
+if (req.headers['x-api-key'] !== process.env.INTERNAL_API_KEY)
+    return res.status(401).json({ error: 'Unauthorised' })
+next()
+}
+
+app.use('/agent-generate', authenticate)
+app.use('/generate-email', authenticate)
 
 const PORT = 3000;
 app.use(cors({
-  origin: "https://follow-up-email-agent.vercel.app/"
+  origin: [
+    "http://localhost:5173",
+    "https://follow-up-email-agent.vercel.app"
+  ],
+  credentials: true
 }));
 
 app.get("/", (req, res) => {
     res.send("Follow-up API is running");
 });
+app.use('/generate-email', limiter)
+app.use('/agent-generate', limiter)
 
 app.get("/invoices", async (req, res) => {
     try {
