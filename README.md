@@ -97,14 +97,18 @@ The agent uses a **ReAct (Reason + Act)** loop — instead of hardcoded procedur
 | Why this model | GPT-4o-mini offers GPT-4 class instruction following at a fraction of the cost. Strong JSON output reliability makes it ideal for structured email generation. Chosen over GPT-4o (unnecessarily expensive for this task) and Llama 3 (weaker JSON consistency in testing). |
 | Why OpenRouter | Single API key provides access to multiple LLM providers — ideal for prototyping without committing to direct OpenAI billing. Easy model switching with no code changes. |
 
-### Agent Framework — LangChain (ReAct)
+## Agent Framework & Architecture
 
-| Field     | Detail                                                                                      |
-|-----------|---------------------------------------------------------------------------------------------|
-| Framework | LangChain — Sequential pipeline using LangChain DynamicTool                                                       |
-| Architecture | Fixed-order tool execution — read → calculate → generate → log |
-| Why LangChain | First-class tool-calling support, built-in ReAct agent primitives, easy integration with any LLM endpoint, strong community support |
-| Why pipeline | Predictable, auditable pipeline — each step has a single responsibility, errors are isolated per invoice |
+| Field | Detail |
+|---|---|
+| Framework | LangChain (tool abstraction and orchestration utilities) |
+| Architecture | Deterministic sequential pipeline |
+| Pipeline Flow | Read invoices → Calculate escalation stage → Generate AI email → Save audit logs |
+| Tool Layer | LangChain DynamicTool abstractions used for modular workflow design |
+| LLM Usage | OpenRouter LLM used for personalized finance email generation |
+| Why LangChain | Modular tool abstraction, clean workflow separation, reusable pipeline components, simplified LLM integration |
+| Why Sequential Pipeline | Predictable execution flow, easier debugging, deterministic outputs, improved auditability, safer production behavior |
+| Agentic Design Decision | Full autonomous ReAct execution was intentionally avoided in the final implementation to maintain reliability, traceability, and controlled business logic execution |
 
 ### Scheduling — node-cron
 
