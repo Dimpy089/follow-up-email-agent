@@ -51,31 +51,34 @@ Backend API (Express.js)
          ├── Audit Logger             →  writes to logs/emailLogs.json
          │
          ├── Scheduler (node-cron)    →  runs daily at 10:00 AM
-         │
-         └── LangChain ReAct Agent    →  orchestrates tools autonomously
-                    │
-                    ├── Tool: read_invoices
-                    ├── Tool: calculate_stage
-                    ├── Tool: generate_email
-                    └── Tool: save_logs
+         |
+         └── Invoice Agent Pipeline   →  sequential tool execution
+           │
+           ├── Step 1: read_invoices
+           ├── Step 2: calculate_stage
+           ├── Step 3: generate_email
+           └── Step 4: save_logs
 ```
 
-### LangChain ReAct Agent Flow
+### Invoice Agent Pipeline flow
 
 ```
 Agent receives task
       │
       ▼
-[Reason] Which tool do I need next?
+Step 1 — Read all invoices from CSV
       │
       ▼
-[Act] Execute tool (read / calculate / generate / log)
+Step 2 — Calculate days overdue + escalation stage for each
       │
       ▼
-[Observe] Read tool output
+Step 3 — Generate personalised email (skip if not overdue or ESCALATED)
       │
       ▼
-Repeat until all invoices processed → Return summary
+Step 4 — Save to audit log
+      │
+      ▼
+Return summary of emails generated
 ```
 
 The agent uses a **ReAct (Reason + Act)** loop — instead of hardcoded procedural steps, the LLM dynamically decides which tool to call next based on observations, making it adaptable to varying invoice states.
@@ -98,10 +101,10 @@ The agent uses a **ReAct (Reason + Act)** loop — instead of hardcoded procedur
 
 | Field     | Detail                                                                                      |
 |-----------|---------------------------------------------------------------------------------------------|
-| Framework | LangChain — `createReactAgent()`                                                            |
-| Architecture | ReAct loop — the agent reasons about the current state, selects a tool, executes it, and observes results before deciding the next step |
+| Framework | LangChain — Sequential pipeline using LangChain DynamicTool                                                       |
+| Architecture | Fixed-order tool execution — read → calculate → generate → log |
 | Why LangChain | First-class tool-calling support, built-in ReAct agent primitives, easy integration with any LLM endpoint, strong community support |
-| Why ReAct | More robust than a simple chain for multi-step workflows — the agent can handle variable invoice counts and skip non-overdue records without needing hardcoded branching |
+| Why pipeline | Predictable, auditable pipeline — each step has a single responsibility, errors are isolated per invoice |
 
 ### Scheduling — node-cron
 
