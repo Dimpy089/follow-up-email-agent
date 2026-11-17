@@ -111,65 +111,6 @@ const saveLogsTool = new DynamicTool({
     }
 });
 
-// const runInvoiceAgent = async () => {
-//     const llm = new ChatOpenAI({
-//         configuration: {
-//             baseURL: "https://openrouter.ai/api/v1",
-//         },
-//         openAIApiKey: process.env.OPENROUTER_API_KEY,
-//         modelName: "openrouter/auto",
-//         temperature: 0
-//     });
-
-//     const tools = [
-//         readInvoicesTool,
-//         calculateStageTool,
-//         generateEmailTool,
-//         saveLogsTool
-//     ];
-
-//     const prompt = PromptTemplate.fromTemplate(`
-// Answer the following questions as best you can.
-
-// You have access to the following tools:
-
-// {tools}
-
-// Use the following format:
-
-// Question: the input question you must answer
-// Thought: you should always think about what to do
-// Action: the action to take, should be one of [{tool_names}]
-// Action Input: the input to the action
-// Observation: the result of the action
-// ... (this Thought/Action/Action Input/Observation can repeat N times)
-// Thought: I now know the final answer
-// Final Answer: the final answer to the original input question
-
-// Question: {input}
-// {agent_scratchpad}
-// `);
-//     const { createOpenAIFunctionsAgent } = require("langchain/agents");
-//     const agent = await createOpenAIFunctionsAgent({
-//     llm,
-//     tools,
-//     prompt
-// });
-
-//     const agentExecutor = new AgentExecutor({
-//         agent,
-//         tools,
-//         verbose: true,
-//         maxIterations: 10
-//     });
-
-//     const result = await agentExecutor.invoke({
-//         input: "Process all overdue invoices step by step: first call read_invoices with empty string, then call calculate_stage with the result, then call generate_email with that result, then call save_logs with the final result."
-//     });
-//     return result;
-// };
-
-
 const runInvoiceAgent = async () => {
     const invoices = await readCSV();
 
